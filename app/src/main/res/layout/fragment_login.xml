@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <EditText
+        android:id="@+id/login_pass_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBaseline_toBaselineOf="@+id/login_pass"
+        app:layout_constraintEnd_toEndOf="@+id/login_username_edit"
+        app:layout_constraintStart_toStartOf="@+id/login_username_edit" />
+
+    <TextView
+        android:id="@+id/login_username"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/user_name"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_username_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBaseline_toBaselineOf="@+id/login_username"
+        app:layout_constraintStart_toEndOf="@+id/login_username" />
+
+    <TextView
+        android:id="@+id/login_pass"
+        android:layout_width="96dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/password"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/login_username"
+        app:layout_constraintTop_toBottomOf="@+id/login_username" />
+
+    <Button
+        android:id="@+id/login_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="#012067"
+        android:text="@string/log_in"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_pass_edit" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="41dp"
+        android:layout_height="19dp"
+        android:text="@string/or"
+        app:layout_constraintBottom_toBottomOf="@+id/login_signup"
+        app:layout_constraintEnd_toStartOf="@+id/login_signup" />
+
+    <TextView
+        android:id="@+id/login_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/sign_up"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_login_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

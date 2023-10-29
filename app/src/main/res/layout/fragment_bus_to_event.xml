@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00392626"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    tools:context=".ui.busToEvent.BusToEventFragment"
+    >
+
+    <TextView
+        android:id="@+id/event_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_marginTop="18sp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:paddingTop="18dp"
+        android:paddingEnd="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bus_recycle"
+            android:layout_gravity="center"
+            android:layout_width="383dp"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

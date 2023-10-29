@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <TextView
+        android:id="@+id/signup_username"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="44dp"
+        android:text="@string/user_name1"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/singup_username_edit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/singup_pass"
+        android:layout_width="68dp"
+        android:layout_height="24dp"
+        android:text="@string/password"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/singup_pass_edit"
+        app:layout_constraintStart_toStartOf="@+id/signup_username" />
+
+    <TextView
+        android:id="@+id/singup_pass_confirm"
+        android:layout_width="95dp"
+        android:layout_height="42dp"
+        android:text="@string/confirm_password"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/singup_pass_confirm_edit"
+        app:layout_constraintStart_toStartOf="@+id/singup_pass" />
+
+    <TextView
+        android:id="@+id/singup_card"
+        android:layout_width="70dp"
+        android:layout_height="24dp"
+        android:text="@string/card_no"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/singup_card_edit"
+        app:layout_constraintStart_toStartOf="@+id/singup_pass_confirm" />
+
+    <TextView
+        android:id="@+id/singup_csv"
+        android:layout_width="68dp"
+        android:layout_height="30dp"
+        android:text="@string/csv"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/singup_csv_edit"
+        app:layout_constraintStart_toStartOf="@+id/singup_card" />
+
+
+    <Button
+        android:id="@+id/singup_signup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#012067"
+        android:text="@string/sign_up1"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singup_csv_edit"
+        app:layout_constraintVertical_bias="0.17" />
+
+    <TextView
+        android:id="@+id/signup_title"
+        android:layout_width="303dp"
+        android:layout_height="102dp"
+        android:gravity="center"
+        android:text="@string/sign_up2"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/singup_card_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="@+id/singup_pass_confirm_edit"
+        app:layout_constraintTop_toBottomOf="@+id/singup_pass_confirm_edit">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="225dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/enter_card_no"
+            android:inputType="number"
+            app:layout_constraintStart_toStartOf="@+id/singup_pass_confirm_edit"
+            app:layout_constraintTop_toTopOf="@+id/singup_card" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/singup_csv_edit"
+        app:passwordToggleEnabled="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/singup_card_edit"
+        app:layout_constraintTop_toBottomOf="@+id/singup_card_edit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="225dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/enter_csv"
+            android:inputType="numberPassword"
+            app:layout_constraintStart_toStartOf="@+id/singup_card_edit"
+            app:layout_constraintTop_toTopOf="@+id/singup_csv" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/singup_pass_confirm_edit"
+        app:passwordToggleEnabled="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/singup_pass_edit"
+        app:layout_constraintTop_toBottomOf="@+id/singup_pass_edit">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="225dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@+id/singup_pass_edit"
+            app:layout_constraintTop_toTopOf="@+id/singup_pass_confirm" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/singup_username_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/signup_username"
+        app:layout_constraintTop_toBottomOf="@+id/signup_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enter_user_name"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/signup_username"
+            app:layout_constraintTop_toTopOf="@+id/signup_username" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/singup_pass_edit"
+        android:layout_width="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/singup_username_edit"
+        app:layout_constraintTop_toBottomOf="@+id/singup_username_edit">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="225dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            app:layout_constraintStart_toStartOf="@+id/singup_username_edit"
+            app:layout_constraintTop_toTopOf="@+id/singup_pass" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

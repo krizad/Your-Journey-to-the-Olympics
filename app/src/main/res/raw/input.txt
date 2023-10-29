@@ -1,0 +1,59 @@
+nullnull//			Sport, 				Discipline, 						Category, 			Venue, 								Date, 		Start time, 	Duration, 	Bus travel time
+Event 1	: 	Ceremony, 			Opening Ceremony, 					All, 				Olympic Stadium, 					24.7.20, 	20.00, 			3, 			30
+Event 2	:	Athletics,			Marathon Final,						Men's,				Olympic Stadium,					08.08.20,	19.00,			3.20,		30
+Event 3 : 	Swimming, 			Preliminary,						Individuals, 		Tokyo Aquatics Centre, 				26.7.20, 	10.30, 			2, 			45
+Event 4	:	Swimming,			Freestyle/Medly Final,				Individuals,		Tokyo Aquatics Centre,				02.08.20,	10.30,			2,			45
+Event 5 : 	Diving, 			Springboard Semifinal, 				Men,				Tokyo Aquatics Centre, 				04.08.20, 	10.00, 			1.30, 		45
+Event 6	:	Diving,				Synchronized 3m Springboard Final,	Individuals,		Tokyo Aquatics Centre,				26.07.20,	15.00,			1,			45
+Event 7	:	Diving,				10m Platform Semifinal,				Men's,				Tokyo Aquatics Centre,				08.08.20,	11.00,			1.30,		45
+Event 8	:	Weightlifting,		40 kg Group B,						Women's,			Tokyo International Forum, 			25.07.20,	13.20,			1.50,		23
+Event 9	:	Weightlifting,		76 kg Group B,						Women's,			Tokyo International Forum,			02.08.20,	13.50,			2.10,		23
+Event 10:	Weightlifting,		+109 kg Group B,					Men's,				Tokyo International Forum,			04.08.20,	13.50,			2.10,		23
+Event 11:	Weightlifting,		+109 kg Group A & Victory Ceremony, Men's,				Tokyo International Forum,			05.08.20,	14.50,			2.10,		23
+
+//		Bus type,	Destination,					Depart,		Duration,	Rows,	Cols,	Cost
+Bus 1 : Type A,		Olympic Stadium,				16.30,		30,			5,		4,		B1000
+Bus 2 : Type A,		Olympic Stadium,				17.00,		30,			5,		4,		B1000
+Bus 3 : Type A,		Olympic Stadium,				17.30,		30,			5,		4,		B1000
+Bus 4 : Type A,		Olympic Stadium,				18.00,		30,			5,		4,		B1000
+Bus 5 : Type A,		Olympic Stadium,				18.30,		30,			5,		4,		B1000
+Bus 6 : Type A,		Olympic Stadium,				19.00,		30,			5,		4,		B1000
+Bus 7 : Type A,		Olympic Stadium,				19.30,		30,			5,		4,		B1000
+Bus 8 : Type A,		Olympic Stadium,				20.00,		30,			5,		4,		B1000
+Bus 9 : Type A,		Olympic Stadium,				20.30,		30,			5,		4,		B1000
+
+Bus 10: Type A,		Tokyo Aquatics Centre,			08.00,		45,			5,		4,		B1000
+Bus 11: Type A,		Tokyo Aquatics Centre,			08.30,		45,			5,		4,		B1000
+Bus 12: Type A,		Tokyo Aquatics Centre,			09.00,		45,			5,		4,		B1000
+Bus 13: Type A,		Tokyo Aquatics Centre,			09.30,		45,			5,		4,		B1000
+Bus 14: Type A,		Tokyo Aquatics Centre,			10.00,		45,			5,		4,		B1000
+Bus 15: Type A,		Tokyo Aquatics Centre,			10.30,		45,			5,		4,		B1000
+Bus 16: Type A,		Tokyo Aquatics Centre,			11.00,		45,			5,		4,		B1000
+Bus 17: Type A,		Tokyo Aquatics Centre,			11.30,		45,			5,		4,		B1000
+Bus 18: Type A,		Tokyo Aquatics Centre,			13.00,		45,			5,		4,		B1000
+Bus 19: Type A,		Tokyo Aquatics Centre,			13.30,		45,			5,		4,		B1000
+Bus 20: Type A,		Tokyo Aquatics Centre,			14.00,		45,			5,		4,		B1000
+Bus 21: Type A,		Tokyo Aquatics Centre,			14.30,		45,			5,		4,		B1000
+Bus 22: Type A,		Tokyo Aquatics Centre,			15.00,		45,			5,		4,		B1000
+
+Bus 23: Type A,		Tokyo International Forum,		11.00,		23,			5,		4,		B1000
+Bus 24: Type A,		Tokyo International Forum,		11.30,		23,			5,		4,		B1000
+Bus 25: Type A,		Tokyo International Forum,		12.00,		23,			5,		4,		B1000
+Bus 26: Type A,		Tokyo International Forum,		12.30,		23,			5,		4,		B1000
+Bus 27: Type A,		Tokyo International Forum,		13.00,		23,			5,		4,		B1000
+Bus 28: Type A,		Tokyo International Forum,		13.30,		23,			5,		4,		B1000
+Bus 29: Type A,		Tokyo International Forum,		14.00,		23,			5,		4,		B1000
+Bus 30: Type A,		Tokyo International Forum,		14.30,		23,			5,		4,		B1000
+Bus 31: Type A,		Tokyo International Forum,		15.00,		23,			5,		4,		B1000
+
+Bus 32: Type B,		Olympic Stadium,				18.00,		30,			5,		2,		B1500
+Bus 33: Type B,		Olympic Stadium,				19.00,		30,			5,		2,		B1500
+Bus 34: Type B,		Olympic Stadium,				20.00,		30,			5,		2,		B1500
+Bus 35: Type B,		Olympic Stadium,				20.30,		30,			5,		2,		B1500
+
+
+//	    	UserID, password
+Account 1 : Mickey,	Mouseee222!!!
+Account 2 : Minnie,	[Mousie8900]
+Account 3 : Donald,	##duckIee2608
+Account 4 : Daisy,	0080^26_duckoO

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dia_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="80dp"
+            android:text="@string/confirm_booking"
+            android:textColor="#012067"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dia_busType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/bus_type"
+            android:textColor="#012067"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dia_destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/destination"
+            android:textColor="#012067"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dia_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/event"
+            android:textColor="#012067" />
+
+        <TextView
+            android:id="@+id/dia_discipline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/discipline"
+            android:textColor="#012067" />
+
+        <TextView
+            android:id="@+id/dia_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/category"
+            android:textColor="#012067" />
+
+        <TextView
+            android:id="@+id/dia_time_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/category"
+            android:textColor="#012067" />
+
+        <TextView
+            android:id="@+id/dia_seat_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/category"
+            android:textColor="#012067" />
+
+        <TextView
+            android:id="@+id/dia_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/price"
+            android:textColor="#012067" />
+
+        <EditText
+            android:id="@+id/dia_confirm_csv"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="3"
+            android:hint="@string/enter_csv_to_pay"
+            android:inputType="number"
+            android:maxEms="3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:background="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:text="@string/cancel"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/confirm"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:text="@string/confirm"
+                android:textColor="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

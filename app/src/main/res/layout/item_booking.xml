@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/booking_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:outlineAmbientShadowColor="@color/colorAccent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardView"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:background="#E7EBED">
+
+        <TextView
+            android:id="@+id/booking_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Category"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/booking_discipline"
+            app:layout_constraintStart_toStartOf="@+id/booking_discipline"
+            app:layout_constraintTop_toBottomOf="@+id/booking_discipline" />
+
+        <TextView
+            android:id="@+id/booking_depart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Depart"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/booking_arrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Arrive"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/booking_depart"
+            app:layout_constraintStart_toStartOf="@+id/booking_depart"
+            app:layout_constraintTop_toBottomOf="@+id/booking_depart" />
+
+        <TextView
+            android:id="@+id/booking_discipline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Discipline"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/booking_event"
+            app:layout_constraintStart_toStartOf="@+id/booking_event"
+            app:layout_constraintTop_toBottomOf="@+id/booking_event" />
+
+        <ImageView
+            android:id="@+id/booking_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="#012067"
+            android:clickable="false"
+            android:src="@drawable/ic_clear_black_24dp"
+            android:tint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/booking_busType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BusType"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/booking_category"
+            app:layout_constraintStart_toStartOf="@+id/booking_category"
+            app:layout_constraintTop_toBottomOf="@+id/booking_category" />
+
+        <TextView
+            android:id="@+id/booking_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Event"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/booking_arrive"
+            app:layout_constraintStart_toStartOf="@+id/booking_arrive"
+            app:layout_constraintTop_toBottomOf="@+id/booking_arrive" />
+
+        <TextView
+            android:id="@+id/booking_seatNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="Seat NO."
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/booking_busType"
+            app:layout_constraintStart_toStartOf="@+id/booking_busType"
+            app:layout_constraintTop_toBottomOf="@+id/booking_busType" />
+
+        <TextView
+            android:id="@+id/booking_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Status"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+

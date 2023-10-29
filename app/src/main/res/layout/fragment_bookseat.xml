@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00392626"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    tools:context=".ui.busToEvent.BusToEventFragment">
+
+
+    <ImageView
+        android:id="@+id/seat18"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/seat14"
+        app:layout_constraintTop_toTopOf="@+id/seat17" />
+
+    <ImageView
+        android:id="@+id/seat17"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/seat13"
+        app:layout_constraintTop_toBottomOf="@+id/seat13" />
+
+    <ImageView
+        android:id="@+id/seat20"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/seat16"
+        app:layout_constraintTop_toTopOf="@+id/seat19" />
+
+    <ImageView
+        android:id="@+id/seat19"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/seat15"
+        app:layout_constraintTop_toTopOf="@+id/seat18" />
+
+    <ImageView
+        android:id="@+id/seat15"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/seat11"
+        app:layout_constraintTop_toTopOf="@+id/seat14" />
+
+    <ImageView
+        android:id="@+id/seat13"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="@+id/seat9"
+        app:layout_constraintTop_toBottomOf="@+id/seat9" />
+
+    <ImageView
+        android:id="@+id/seat14"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/seat10"
+        app:layout_constraintTop_toTopOf="@+id/seat13" />
+
+    <ImageView
+        android:id="@+id/seat16"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/seat12"
+        app:layout_constraintTop_toTopOf="@+id/seat15" />
+
+    <ImageView
+        android:id="@+id/seat11"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/seat7"
+        app:layout_constraintTop_toTopOf="@+id/seat10" />
+
+    <ImageView
+        android:id="@+id/seat9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/seat5"
+        app:layout_constraintTop_toBottomOf="@+id/seat5" />
+
+    <ImageView
+        android:id="@+id/seat10"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/seat6"
+        app:layout_constraintTop_toTopOf="@+id/seat9" />
+
+    <ImageView
+        android:id="@+id/seat12"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/seat8"
+        app:layout_constraintTop_toTopOf="@+id/seat11" />
+
+    <ImageView
+        android:id="@+id/seat7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/seat3"
+        app:layout_constraintTop_toTopOf="@+id/seat6" />
+
+    <ImageView
+        android:id="@+id/seat5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/seat1"
+        app:layout_constraintTop_toBottomOf="@+id/seat1" />
+
+    <ImageView
+        android:id="@+id/seat6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/seat2"
+        app:layout_constraintTop_toTopOf="@+id/seat5" />
+
+    <ImageView
+        android:id="@+id/seat8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/seat4"
+        app:layout_constraintTop_toTopOf="@+id/seat7" />
+
+    <TextView
+        android:id="@+id/event_detail_book"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/seat1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_detail_book" />
+
+    <ImageView
+        android:id="@+id/seatDriver"
+        android:layout_width="48dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/driver"
+        app:layout_constraintEnd_toEndOf="@+id/seat20"
+        app:layout_constraintStart_toStartOf="@+id/seat20"
+        app:layout_constraintTop_toBottomOf="@+id/seat20" />
+
+    <ImageView
+        android:id="@+id/seat2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toEndOf="@+id/seat1"
+        app:layout_constraintTop_toTopOf="@+id/seat1" />
+
+    <ImageView
+        android:id="@+id/seat3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/seat4"
+        app:layout_constraintTop_toTopOf="@+id/seat4" />
+
+    <ImageView
+        android:id="@+id/seat4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/event_detail_book" />
+
+    <Button
+        android:id="@+id/bookBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="44dp"
+        android:background="#012067"
+        android:text="@string/book1"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seatDriver" />
+
+    <TextView
+        android:id="@+id/row_A"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seat1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seat1" />
+
+    <TextView
+        android:id="@+id/row_B"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="B"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seat5"
+        app:layout_constraintStart_toStartOf="@+id/row_A"
+        app:layout_constraintTop_toTopOf="@+id/seat5" />
+
+    <TextView
+        android:id="@+id/row_C"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="C"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seat9"
+        app:layout_constraintStart_toStartOf="@+id/row_B"
+        app:layout_constraintTop_toTopOf="@+id/seat9" />
+
+    <TextView
+        android:id="@+id/row_D"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="D"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seat13"
+        app:layout_constraintStart_toStartOf="@+id/row_C"
+        app:layout_constraintTop_toTopOf="@+id/seat13" />
+
+    <TextView
+        android:id="@+id/row_E"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="E"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/seat17"
+        app:layout_constraintStart_toStartOf="@+id/row_D"
+        app:layout_constraintTop_toTopOf="@+id/seat17" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

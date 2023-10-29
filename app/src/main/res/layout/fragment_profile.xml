@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="170dp"
+        android:layout_height="114dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/user_profile_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_username"
+        android:layout_width="96dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/user_name"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_icon" />
+
+    <TextView
+        android:id="@+id/profile_password"
+        android:layout_width="94dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/password"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/profile_username"
+        app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+    <TextView
+        android:id="@+id/profile_card"
+        android:layout_width="94dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/card"
+        android:textColor="#012067"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/profile_password"
+        app:layout_constraintTop_toBottomOf="@+id/profile_password" />
+
+    <TextView
+        android:id="@+id/profile_username_show"
+        android:layout_width="142dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:text="@string/username"
+        app:layout_constraintBaseline_toBaselineOf="@+id/profile_username"
+        app:layout_constraintStart_toEndOf="@+id/profile_username" />
+
+    <TextView
+        android:id="@+id/profile_password_show"
+        android:layout_width="155dp"
+        android:layout_height="52dp"
+        android:text="@string/password1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/profile_password"
+        app:layout_constraintStart_toStartOf="@+id/profile_username_show" />
+
+    <TextView
+        android:id="@+id/profile_card_show"
+        android:layout_width="213dp"
+        android:layout_height="33dp"
+        android:text="@string/card_no_csv"
+        app:layout_constraintBaseline_toBaselineOf="@+id/profile_card"
+        app:layout_constraintStart_toStartOf="@+id/profile_password_show" />
+
+    <Button
+        android:id="@+id/profile_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="124dp"
+        android:background="#012067"
+        android:text="@string/log_out"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/profile_add_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#012067"
+        android:text="@string/add_card"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toStartOf="@+id/profile_logout"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_logout" />
+
+    <ImageView
+        android:id="@+id/profile_eye"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:src="@drawable/closeeyes"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/profile_password_show"
+        app:layout_constraintTop_toTopOf="@+id/profile_password_show"
+        android:focusable="true" />
+
+    <Button
+        android:id="@+id/profile_show_card"
+        android:layout_width="114dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:background="#012067"
+        android:text="@string/change_card"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/profile_card_show"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_card_show"
+        app:layout_constraintTop_toBottomOf="@+id/profile_card_show" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

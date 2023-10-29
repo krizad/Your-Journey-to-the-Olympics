@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00392626"
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    android:gravity="right"
+    tools:context=".ui.home.EventFragment">
+
+    <TextView
+        android:id="@+id/title_booking"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="@string/your_schedule"
+        android:textColor="#012067"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/booking_sort_status"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+        <Spinner
+            android:id="@+id/booking_sort_time"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_gravity="center"
+        android:id="@+id/booking_recycle"
+        android:layout_width="371dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
